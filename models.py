@@ -7,7 +7,7 @@ db = SQLAlchemy(app)
 
 
 class Url(db.Model):
-	"""A url object. Contains the long and short version of a URL."""
+    """A url object. Contains the long and short version of a URL."""
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     url = db.Column(db.String(2000), unique=False)
     short_url = db.Column(db.String(10), unique=True)
