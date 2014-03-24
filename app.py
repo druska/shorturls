@@ -49,7 +49,7 @@ def short_url(short_url):
     if url:
         return redirect(url.url, 301)
     else:
-        return redirect('/', 302)
+        return redirect('/', 404)
 
 
 @app.route("/", methods=["GET"])
